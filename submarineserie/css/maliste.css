@@ -1,0 +1,167 @@
+/* Reset des marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour la page d'accueil */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Affichage des menu principal */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav_connect {
+  margin-right: auto;
+}
+
+/* Text des menu */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Fond des text menu */
+nav ul li a:hover {
+  background-color: #444;
+}
+
+/* Affichage du menu profil */
+.dropdown-menu {
+  margin-left: -70px;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.align-droite {
+  position: fixed;
+  top: 10px;
+  right: 0;
+}
+
+/* Affiche du menu profil */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Menu profil */
+.dropdown-menu li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Fond du menu profil */
+.dropdown-menu li a:hover {
+  background-color: #a7a5a5;
+}
+
+/* Style de la mini bande */
+.mini-bande {
+  margin-top: 5px;
+  background-color: #acacac;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Affichage des séries */
+.serie-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.one-star{
+  margin-left:1%;
+}
+.two-stars{
+  margin-left:1%;
+}
+.three-stars{
+  margin-left:1%;
+}
+.four-stars{
+  margin-left:1%;
+}
+.five-stars{
+  margin-left:1%;
+}
+
+.serie-list {
+margin-left: 1%;
+}
+
+.serie-image-container {
+position: relative;
+}
+.serie-image {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.star-container {
+  bottom: 0;
+  left: 0;
+  width: 92%;
+  padding: 5px;
+  background-color: rgb(253, 253, 253);
+}
+
+.submit_supprimer {
+  background-color: #333;
+  margin-left: 1%;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit_supprimer:hover {
+background-color: #000;
+}
+
+.submit_tout {
+  background-color: #333;
+  margin-left: 50%;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit_tout:hover {
+background-color: #000;
+}
+

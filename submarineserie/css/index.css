@@ -1,0 +1,172 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles pour la page d'accueil */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Affichage des menus principaux */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li.dropdown {
+  margin-right: auto;
+}
+
+/* Texte des menus */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Fond des textes des menus au survol */
+nav ul li a:hover {
+  background-color: #444;
+}
+
+/* Affichage du menu profil */
+.dropdown-menu {
+  margin-left: -70px;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.align-droite {
+  position: fixed;
+  top: 10px;
+  right: 0;
+}
+
+/* Affichage du menu profil au survol */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Menu profil */
+.dropdown-menu li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Fond du menu profil au survol */
+.dropdown-menu li a:hover {
+  background-color: #a7a5a5;
+}
+
+/* Style pour le champ de recherche */
+input[type="text"] {
+  padding: 10px;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 25%;
+}
+
+/* Style pour l'image au milieu */
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  margin-top: 45px;
+}
+
+  .rating {
+    display: inline-block;
+    font-size: 0;
+  }
+  
+  .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('path/to/empty-star.png');
+    background-size: contain;
+    cursor: pointer;
+  }
+  
+  .star.filled {
+    background-image: url('path/to/filled-star.png');
+  }
+
+
+  
+
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    color: #777;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-md-12 {
+    width: 100%;
+    float: left;
+}
+
+ul.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+ul.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul.footer-links li a {
+    color: #777;
+    text-decoration: none;
+}
+
+ul.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+}
+
+
